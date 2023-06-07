@@ -84,12 +84,24 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="flex flex-wrap gap-10 justify-around my-20 mx-40 max-xl:mx-10 max-lg:mx-5">
+      <div className="flex justify-around gap-96 mb-4 mt-10 max-xl:gap-24">
+        <p className="text-slate-500 font-semibold text-lg">Blog</p>
+        <a className="text-red-800 text-xs font-bold" href="">
+          View all
+        </a>
+      </div>
+      <div className="flex flex-wrap gap-10 justify-around mb-20 mx-40 max-xl:mx-10 max-lg:mx-5">
         {blogs.map((blog) => {
           return <Blog key={blog.id} blog={blog} />
         })}
       </div>
-      <div className="flex flex-col gap-10 my-20">
+      <div className="flex justify-around gap-96 mb-4 mt-10 max-xl:gap-40">
+        <p className="text-slate-500 font-semibold text-lg">Podcast</p>
+        <a className="text-red-800 text-xs font-bold" href="">
+          View all
+        </a>
+      </div>
+      <div className="flex flex-col gap-10 mb-20">
         {podcasts.map((podcast) => {
           return <Podcasts key={podcast.id} podcast={podcast} num={1} />
         })}
