@@ -4,7 +4,7 @@ import Navlink from './Navlink'
 
 const Navbar = () => {
   return (
-    <div className="flex justify-evenly gap-40 mt-3">
+    <div className="flex justify-evenly gap-40 mt-3 max-md:justify-start max-md:ml-10">
       <img className="w-32" src={logoCleverse} />
       <Navlink />
     </div>

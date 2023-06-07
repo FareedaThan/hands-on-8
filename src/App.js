@@ -91,7 +91,7 @@ function App() {
       </div>
       <div className="flex flex-col gap-10 my-20">
         {podcasts.map((podcast) => {
-          return <Podcasts key={podcast.id} podcast={podcast} />
+          return <Podcasts key={podcast.id} podcast={podcast} num={1} />
         })}
       </div>
       <Footer />

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="w-full py-5 mx-auto border-t border-b">
-      <div className="flex flex-wrap justify-center gap-10 max-md:hidden">
+    <div className="w-full py-5 mx-auto border-t">
+      <div className="flex flex-wrap justify-center gap-10 ">
         <a href="" className="font-bold text-lg hover:text-stone-400">
           About Us
         </a>
